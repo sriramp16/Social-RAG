@@ -86,13 +86,3 @@ python app.py
 🛠️ Version 1.1 (coming soon): Meme image extraction, sentiment graphs, multi-language support
 
 ---
-
-## 🧑‍💻 Contributing
-
-Pull requests are welcome. For major changes, open an issue first to discuss what you would like to change.
-
----
-
-## 📄 License
-
-[MIT](LICENSE)
