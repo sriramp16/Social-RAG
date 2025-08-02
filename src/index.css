@@ -1,0 +1,155 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Social Media RAG Analytics Design System */
+@layer base {
+  :root {
+    /* Core Backgrounds */
+    --background: 240 10% 3.9%;
+    --foreground: 0 0% 98%;
+    
+    /* Social Media Brand Colors */
+    --primary: 262 83% 58%;
+    --primary-foreground: 0 0% 98%;
+    --primary-glow: 262 83% 70%;
+    
+    /* Analytics Accent Colors */
+    --secondary: 217 91% 60%;
+    --secondary-foreground: 0 0% 98%;
+    
+    /* Trend Colors */
+    --accent: 142 76% 36%;
+    --accent-foreground: 0 0% 98%;
+    
+    /* Alert & Viral Content */
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+    
+    /* Social Media Gradients */
+    --gradient-social: linear-gradient(135deg, hsl(262 83% 58%), hsl(217 91% 60%));
+    --gradient-trend: linear-gradient(135deg, hsl(142 76% 36%), hsl(173 80% 40%));
+    --gradient-viral: linear-gradient(135deg, hsl(0 84% 60%), hsl(25 95% 53%));
+    --gradient-analytics: linear-gradient(135deg, hsl(217 91% 60%), hsl(262 83% 58%));
+    
+    /* Dashboard Backgrounds */
+    --card: 240 10% 3.9%;
+    --card-foreground: 0 0% 98%;
+    --card-elevated: 240 5% 6%;
+    
+    /* Interactive Elements */
+    --popover: 240 10% 3.9%;
+    --popover-foreground: 0 0% 98%;
+    
+    --muted: 240 5% 9%;
+    --muted-foreground: 240 5% 64.9%;
+    
+    --border: 240 5% 11%;
+    --input: 240 5% 11%;
+    --ring: 262 83% 58%;
+    
+    /* Social Media Platform Colors */
+    --twitter: 203 89% 53%;
+    --instagram: 315 100% 50%;
+    --tiktok: 348 83% 47%;
+    --youtube: 0 100% 50%;
+    --linkedin: 201 100% 35%;
+    
+    /* Data Visualization */
+    --chart-1: 262 83% 58%;
+    --chart-2: 217 91% 60%;
+    --chart-3: 142 76% 36%;
+    --chart-4: 25 95% 53%;
+    --chart-5: 315 100% 50%;
+    
+    /* Animations & Effects */
+    --pulse-glow: 0 0 20px hsl(var(--primary-glow) / 0.3);
+    --shadow-social: 0 10px 30px -10px hsl(var(--primary) / 0.3);
+    --shadow-elevated: 0 20px 40px -15px hsl(240 10% 3.9% / 0.4);
+    
+    --radius: 0.75rem;
+    
+    /* Sidebar */
+    --sidebar-background: 240 10% 3.9%;
+    --sidebar-foreground: 0 0% 98%;
+    --sidebar-primary: 262 83% 58%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 5% 9%;
+    --sidebar-accent-foreground: 0 0% 98%;
+    --sidebar-border: 240 5% 11%;
+    --sidebar-ring: 262 83% 58%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+}
+
+@layer components {
+  /* Social Media Gradient Backgrounds */
+  .bg-gradient-social {
+    background: var(--gradient-social);
+  }
+  
+  .bg-gradient-trend {
+    background: var(--gradient-trend);
+  }
+  
+  .bg-gradient-viral {
+    background: var(--gradient-viral);
+  }
+  
+  .bg-gradient-analytics {
+    background: var(--gradient-analytics);
+  }
+  
+  /* Glowing Effects */
+  .glow-primary {
+    box-shadow: var(--pulse-glow);
+  }
+  
+  .shadow-social {
+    box-shadow: var(--shadow-social);
+  }
+  
+  .shadow-elevated {
+    box-shadow: var(--shadow-elevated);
+  }
+  
+  .bg-card-elevated {
+    background-color: hsl(var(--card) / 0.8);
+    backdrop-filter: blur(10px);
+  }
+  
+  /* Animated Gradients */
+  .animate-gradient {
+    background-size: 200% 200%;
+    animation: gradient 3s ease infinite;
+  }
+  
+  @keyframes gradient {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+  
+  /* Trend Indicators */
+  .trend-up {
+    color: hsl(var(--accent));
+  }
+  
+  .trend-down {
+    color: hsl(var(--destructive));
+  }
+  
+  .trend-neutral {
+    color: hsl(var(--muted-foreground));
+  }
+}
