@@ -6,8 +6,7 @@
 
 ## 🌐 Deployment
 
-🔗 **Live App:** [Click here to access ViralPulse]((https://social-rag-9o4f-oep2sbnxy-sriramp16s-projects.vercel.app/))
-*(Replace with your actual Streamlit/HuggingFace/Gradio link)*
+🔗 **Live App:** [Click here to access ViralPulse](https://social-rag-9o4f-oep2sbnxy-sriramp16s-projects.vercel.app/)
 
 ---
 
@@ -18,7 +17,7 @@
 * 🔎 Viral Content & Meme Recognition
 * 🌍 Cultural Context & Sentiment Analysis
 * 📊 Platform-specific Filtering (e.g., Twitter, Instagram)
-* 💃 RAG Architecture using LLM + Vector DB
+* 🧃 RAG Architecture using LLM + Vector DB
 
 ---
 
@@ -70,13 +69,13 @@ python app.py
 
 ---
 
-## 🥪 Tech Stack
+## 🧪 Tech Stack
 
 * 🧠 **LLMs:** OpenAI GPT-3.5/4 or HuggingFace Transformers
 * 📚 **RAG Framework:** LangChain / LlamaIndex
 * 🔍 **Vector DB:** Chroma / Pinecone
 * 🌐 **Frontend:** Streamlit / Gradio
-* 🔤 **APIs:** Twitter API, Instagram Graph API, Reddit API
+* 📰 **APIs:** Twitter API, Instagram Graph API, Reddit API
 * 🧵 **Backend:** Supabase (optional for logging or metadata)
 
 ---
@@ -84,7 +83,7 @@ python app.py
 ## 📌 Project Status
 
 ✅ Version 1.0: Real-time trend analysis with social media filtering and cultural context generation
-💠 Version 1.1 (coming soon): Meme image extraction, sentiment graphs, multi-language support
+🛠️ Version 1.1 (coming soon): Meme image extraction, sentiment graphs, multi-language support
 
 ---
 
